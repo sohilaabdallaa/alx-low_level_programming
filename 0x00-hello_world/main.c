@@ -3,7 +3,9 @@
  *
  * Return: Always 0 (Success)
  */
+#include <stdio.h>
 int main(void)
 {
-    return (0);
+	puts("Hello World");
+	return 0;
 }
