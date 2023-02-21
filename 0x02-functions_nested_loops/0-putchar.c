@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * Description: prints 'Holberton \n'
+ * Description: prints '_putchar \n'
  * Return: Always 0 (success)
  */
 int main(void)
