@@ -9,11 +9,13 @@
 int main(void)
 {
 char arr[] = "_putchar\n";
-int i = '0';
+char c;
+int i = 0;
 while (arr[i] != '\n')
 {
+c = arr[i];
 i++;
-_putchar(arr[i]);
+_putchar(c);
 }
 return (0);
 }
