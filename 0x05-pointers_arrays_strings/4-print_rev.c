@@ -14,7 +14,8 @@ while (*s != '\0')
 i++;
 s++;
 }
-for (j = 0; j <= i; j++)
+s--;
+for (j = 0; j < i; j++)
 {
 _putchar (*s);
 s--;
