@@ -6,21 +6,19 @@
  */
 void print_rev(char *s)
 {
-int size = 16;
 int i = 0;
-char *ss;
-ss = s;
-while (*ss != '\0')
+int j;
+
+while (*s != '\0')
 {
 i++;
-ss++;
+s++;
 }
-ss = s;
-ss = s+ size;
-while (*ss != *s)
+for (j = 0; j < i; j++)
 {
-_putchar (*ss);
-ss--;
+_putchar (*s);
+s--;
 }
+_putchar ('\n');
 }
 
