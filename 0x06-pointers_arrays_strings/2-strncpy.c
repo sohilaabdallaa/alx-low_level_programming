@@ -1,5 +1,4 @@
 #include "main.h"
-#include<stdio.h>
 /**
  * _strncpy- copy string into arr of char
  * @dest: pointer to destination arr of chars
