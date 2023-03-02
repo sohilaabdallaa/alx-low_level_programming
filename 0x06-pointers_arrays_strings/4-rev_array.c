@@ -11,7 +11,7 @@ int i = 0;
 int tmp;
 int *ptr;
 ptr = &(a[n - 1]);
-while (n >= i)
+while ((n - 1) >= i)
 {
 tmp = a[i];
 a[i] = *(ptr);
