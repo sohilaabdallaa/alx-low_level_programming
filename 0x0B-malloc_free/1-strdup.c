@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
  * _strdup - duplicate of the string new memory space.
  * @str: pointer to string which will be duplicated.
@@ -10,7 +11,6 @@
 char *_strdup(char *str)
 {
 	char *ptr = NULL;
-	unsigned int i;
 
 	if (str)
 	{
