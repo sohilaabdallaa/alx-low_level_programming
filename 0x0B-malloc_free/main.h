@@ -5,4 +5,5 @@
  * 			used in 0x0B-malloc_free projects */
 char *create_array(unsigned int size, char c);
 int _putchar(char c);
+char *_strdup(char *str);
 #endif
