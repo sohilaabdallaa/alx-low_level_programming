@@ -26,12 +26,12 @@ listint_t *find_listint_loop(listint_t *head)
 
 				/* If slow and fast meet at the same node, it's the start of the loop */
 				if (slow == fast)
-					return slow;
+					return (slow);
 			}
-			return slow;   /* If no loop is found, return NULL */
+			return (slow);   /* If no loop is found, return NULL */
 		}
 	}
 
-	return NULL;
+	return (NULL);
 }
 
