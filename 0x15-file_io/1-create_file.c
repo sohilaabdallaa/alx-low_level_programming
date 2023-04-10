@@ -22,5 +22,6 @@ int create_file(const char *filename, char *text_content)
 		written_letters = write(fd, text_content, letters);
 	if (written_letters == -1)
 		return (-1);
+	close(fd);
 	return (1);
 }
