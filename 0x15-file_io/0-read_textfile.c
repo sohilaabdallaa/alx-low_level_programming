@@ -1,8 +1,4 @@
-#include "main.h"
-#include <fcntl.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
+#include"main.h"
 /**
  * read_textfile - reads file & prints it to POSIX standard output.
  * @filename : pointer to file.
@@ -21,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(sizeof(letters) * sizeof(char));
+	buffer = malloc((letters) * sizeof(char));
 	if (buffer == NULL)
 		return (0);
 
@@ -30,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	/*
 	 * for display data on window.
 	 */
-	written_letters = write(fd, buffer, read_letters);
+	written_letters = write(STDOUT_FILENO, buffer, read_letters);
 	if (written_letters == -1)
 		return (0);
 	free(buffer);
