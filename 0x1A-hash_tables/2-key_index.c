@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include<string.h>
 /**
  * key_index - produce the index of the key
  * @key:key produced by hash function.
@@ -9,9 +8,5 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	if (size < 1)
-		return (NULL);
-	if (!key)
-		return (NULL);
-	return (strlen(key) % size);
+	return (hash_djb2(key) % size);
 }
