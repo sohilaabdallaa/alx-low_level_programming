@@ -23,7 +23,7 @@ void hash_table_delete(hash_table_t *ht)
 				free(hs_node->key);
 				free(hs_node->value);
 				free(hs_node);
-				node = tmp;
+				hs_node = tmp;
 			}
 		}
 	}
